@@ -12,31 +12,57 @@
 
 .news>img {
     width: 100%;
+    aspect-ratio: 2/1;
     object-fit: cover;
     border-radius: 2rem;
 }
 
 .news>h1 {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: -0.5rem;
 }
 
 .news>h2 {
     font-size: 0.8rem;
     font-weight: 400;
-    line-height: 0;
+    line-height: 1.5;
     margin-bottom: 0;
 }
 
 .news>h3 {
     font-size: 0.8rem;
     font-weight: 600;
+    text-align: center;
+    margin-bottom: -0.02rem;
 }
 
 .news>p {
     font-size: 0.7rem;
     text-align: center;
     cursor: pointer;
+}
+
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.paginator>* {
+    font-size: 0.8rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.paginator>.number {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.nonactive {
+    color: grey;
+    cursor: not-allowed;
 }
 
 @media screen and (max-width: 1024px) {
