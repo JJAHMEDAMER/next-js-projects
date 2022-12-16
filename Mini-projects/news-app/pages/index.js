@@ -1,12 +1,15 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-export default function Home() {
+//comp
+import Home from "./Home";
+
+export default function App() {
   return (
     <div>
       <Head>
         <title>News App</title>
       </Head>
-      <>Hello World</>
+      <Home />
     </div>
-  )
+  );
 }
